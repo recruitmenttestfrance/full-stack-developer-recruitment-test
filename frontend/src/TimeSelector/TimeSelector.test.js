@@ -7,6 +7,9 @@ import { calendar } from "../config.json";
 
 const currentDate = "2021-04-11";
 const onSelectSlot = () => {};
+const emptiedStructure = {
+  [currentDate]: [],
+};
 
 test("renders correct amount of time slots when collapsed", () => {
   render(
@@ -40,4 +43,19 @@ test("renders correct amount of time slots when expanded", () => {
   );
   const elements = screen.getAllByTestId("Time");
   expect(elements.length).toBe(data[currentDate].length);
+});
+
+test("renders with no slots available", () => {
+  render(
+    <TimeSelector
+      {...{
+        data: emptiedStructure,
+        currentDate,
+        selectedSlots: [],
+        displayAllTimeSlots: true,
+        onSelectSlot,
+      }}
+    />
+  );
+  expect(screen.getByText(/Oh no/i)).toBeInTheDocument();
 });

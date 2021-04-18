@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { get } from "lodash";
 import PropTypes from "prop-types";
+import { EmojiFoodBeverage } from "@material-ui/icons";
 
 import { calendar } from "../config.json";
 import "./style.css";
@@ -41,6 +42,16 @@ const TimeSelector = ({
           />
         ))}
       </div>
+      {(slots.length === 0 && (
+        <div className="NoSlotsAvailable">
+          <EmojiFoodBeverage className="Icon" />
+          <p>
+            Oh no ! You emptied all our available slots for this day. Try
+            choosing another day for better luck.
+          </p>
+        </div>
+      )) ||
+        ""}
     </div>
   );
 };

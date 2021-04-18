@@ -13,3 +13,16 @@
   margin-left: 35px;
   margin-right: 35px;
 }
+
+.NoSlotsAvailable {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-family: "GothamBold";
+}
+
+.NoSlotsAvailable .Icon {
+  color: #7f67ea;
+  font-size: 35px;
+}
