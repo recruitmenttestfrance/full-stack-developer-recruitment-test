@@ -1,0 +1,20 @@
+.Time {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 130px;
+  border: 1px solid #7f67ea;
+  color: black;
+  font-family: "GothamBold";
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.TimeSelected {
+  background-color: #7f67ea;
+  color: white;
+}
+
+.Slot {
+  line-height: 150px;
+}

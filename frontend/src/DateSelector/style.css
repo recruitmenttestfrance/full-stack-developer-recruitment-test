@@ -1,0 +1,23 @@
+.DateSelector {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+}
+
+.BackInTime {
+  transform: rotate(180deg);
+}
+
+.Content {
+  display: grid;
+  grid-column-gap: 5px;
+}
+
+.Arrow {
+  cursor: pointer;
+}
+
+.Disabled {
+  cursor: initial;
+  color: darkgray;
+}

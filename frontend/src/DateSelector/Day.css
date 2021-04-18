@@ -1,0 +1,59 @@
+.DayContainer {
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  align-content: space-between;
+  border: 1px solid #7f67ea;
+  color: black;
+  padding: 20px;
+  height: 130px;
+  cursor: pointer;
+}
+
+.Selected {
+  background-color: #7f67ea;
+  color: white;
+}
+
+.Day {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 70px;
+  align-items: center;
+  justify-items: center;
+  font-family: "GothamBold";
+}
+
+.Day .OfTheWeek {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: initial;
+  font-family: Arial;
+}
+
+.Day .OfTheMonth {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.Month {
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+  font-family: "GothamBold";
+  height: 30px;
+}
+
+.Month .Title {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.Month .Year {
+  font-size: 13px;
+}

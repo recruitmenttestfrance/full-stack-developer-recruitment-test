@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "GothamBold";
+  src: local("GothamBold"), url(./fonts/GothamBold.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
