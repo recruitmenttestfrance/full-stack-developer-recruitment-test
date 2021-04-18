@@ -12,11 +12,17 @@ Proper testing especially on corner cases like months with 28 days and such. I'm
 
 I'm not as experienced with backend as I am with frontend. However I would have probably started to split the slot generation part. Right now it is pretty much contained only in the Location class.
 
-How can you handle post midnight cases to be displayed on the same day and not the next one?
+### How can you handle post midnight cases to be displayed on the same day and not the next one?
 
-### How long did you spend on the frontend coding test? What were your biggest difficulties?
+With the way I have made my code, I think it could work by simply extending the time ranges. For example by providing ranges that when we sumup end up with more than 24h for a single day.
+
+### How long did you spend on the frontend coding test?
 
 Roughly 5-6 hours.
+
+### What were your biggest difficulties?
+
+Making sure the layout was as close as possible to the screenshot. I ended going on eva.gg to find out what was the font you are usually using. Also I'm very not happy with the way I handled the passing of data between the components. It actually slowed me down quite a lot. I would have probably used something like redux if I were to do it again.
 
 ### How would you track down a performance issue in production?
 
