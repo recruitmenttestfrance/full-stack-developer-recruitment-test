@@ -1,6 +1,6 @@
 # Prerequisites
 
-The project has been teste with the following environment
+The project has been tested with the following environment
 
 ```
 Node.jS v12.19.0
